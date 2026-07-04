@@ -25,7 +25,36 @@ let customer = {
     email: "john.doe@example.com",
     age: 30,
     city: "New York",
-    item: ["Apple", "Asus", "Samsung", "Nokia"],
+    item: [
+        {
+            name: "Apple",
+            price: 100,
+            variants: [
+                {
+                    color: "Red",
+                    batery: 5000,
+                    warranty: "1 year"
+                },
+                {
+                    color: "Black",
+                    batery: 5500,
+                    warranty: "2 year"
+                }
+            ]
+        },
+        {
+            name: "Asus",
+            price: 200
+        },
+        {
+            name: "Samsung",
+            price: 300
+        },
+        {
+            name: "Nokia",
+            price: 400
+        }
+    ],
     my_family: {
         father: "Abepala",
         mother: "Devika",
@@ -43,3 +72,5 @@ console.log(customer.item);
 console.log(customer.my_family);
 console.log(customer.my_family.father);
 console.log(customer.item[1]);
+console.log(customer.item[1].name);
+console.log(customer.item[0].variants[1].color);
