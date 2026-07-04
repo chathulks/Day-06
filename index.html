@@ -38,6 +38,19 @@
     <input type="text" placeholder="Age" id="txtAge">
 
     <input type="button" value="Add" onclick="AddCustomerOnAction()">
+    <input type="button" value="Load Customer" onclick="LoadCustomerTable()">
+
+    <br><br>
+
+    <table class="table table-hover" id="cus_table">
+        <tr>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>E-mail</th>
+            <th>Address</th>
+            <th>Age</th>
+        </tr>
+    </table>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

@@ -137,7 +137,25 @@ function AddCustomerOnAction() {
     }
 
     CustomerArray.push(Customer);
+    LoadCustomerTable();
     console.log(CustomerArray);
 
 }
 
+function LoadCustomerTable() {
+    let body ="";
+    let table = document.getElementById("cus_table");
+    for (let index = 0; index < CustomerArray.length; index++) {
+        body += `
+        <tr>
+            <td>${CustomerArray[index].name}</td>
+            <td>${CustomerArray[index].mobile}</td>
+            <td>${CustomerArray[index].email}</td>
+            <td>${CustomerArray[index].address}</td>
+            <td>${CustomerArray[index].age}</td>
+        </tr>
+    `;
+    }
+
+    table.innerHTML = body;
+}
