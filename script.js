@@ -24,8 +24,22 @@ let customer = {
     mobile_number: "1234567890",
     email: "john.doe@example.com",
     age: 30,
-    city: "New York"
+    city: "New York",
+    item: ["Apple", "Asus", "Samsung", "Nokia"],
+    my_family: {
+        father: "Abepala",
+        mother: "Devika",
+        brother: "Thisara",
+        sister: "Jithmi"
+    }
 };
 console.log(customer);
-
-//--------------------------------------------------------------
+console.log(customer.full_name);
+console.log(customer.mobile_number);
+console.log(customer.email);
+console.log(customer.age);
+console.log(customer.city);
+console.log(customer.item);
+console.log(customer.my_family);
+console.log(customer.my_family.father);
+console.log(customer.item[1]);
